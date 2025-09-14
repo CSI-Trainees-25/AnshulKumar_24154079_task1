@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .header{
-    min-height: 200vh;
+    min-height: 180vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(bg_img.jpg);
     background-position: center;
@@ -210,4 +210,79 @@ h3{
 .layer:hover h3{
     bottom: 45%;
     opacity: 1;
+}
+
+
+
+
+
+
+.header2{
+    min-height: 75vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://picsum.photos/1200/500?travel);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.nav-links2{
+    flex: 1;
+    text-align: right;
+}
+.nav-links2 ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links2 ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links2 ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links2 ul li:hover::after{
+    width: 100%;
+}
+.text-box2{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box2 h1{
+    font-size: 60px;
+}
+.text-box2 p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.btn2{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 9px;
+}
+.btn2:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
 }
