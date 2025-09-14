@@ -130,7 +130,7 @@ p{
     justify-content: space-between;
 }
 .package-col{
-    flex-basis: 31%;
+    flex-basis: 33%;
     background: #fff3f3;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -158,8 +158,8 @@ h3{
     background-color: #f44336;
 }
 .footer p{
-    color:#fff;
-    font-weight:200;
+    color:#000;
+    font-weight:440;
 }
 
 .places{
@@ -220,7 +220,7 @@ h3{
 .header2{
     min-height: 75vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://picsum.photos/1200/500?travel);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://www.gokitetours.com/wp-content/uploads/2024/03/Top-10-beautiful-hill-stations-in-Munnar.webp);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -285,4 +285,193 @@ h3{
     border: 1px solid #f44336;
     background: #f44336;
     transition: 1s;
+}
+.aboutsec{
+    text-align: center;
+}
+
+.header3{
+    min-height: 75vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://static.vecteezy.com/system/resources/previews/008/009/875/large_2x/panoramic-holiday-landscape-luxurious-beach-resort-hotel-swimming-pool-and-beach-chairs-or-loungers-under-umbrellas-with-palm-trees-blue-sunny-sky-summer-island-seaside-travel-vacation-background-photo.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.nav-links3{
+    flex: 1;
+    text-align: right;
+}
+.nav-links3 ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links3 ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links3 ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links3 ul li:hover::after{
+    width: 100%;
+}
+.text-box3{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box3 h1{
+    font-size: 60px;
+}
+.text-box3 p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.btn3{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 9px;
+}
+.btn3:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+.hotels{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.package-col{
+    flex-basis: 20%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.package-col img{
+    width: 100%;
+    max-height: fit-content;
+    border-radius: 10px;
+    display:block;
+    transition: 0.5s;
+    border-color: #f44336;
+}
+.package-col img:hover{
+    
+    transition: 0.5s;
+}
+.checked {
+  color: orange;
+}
+
+.package-col .info {
+  padding: 15px;
+  text-align: left;
+  background: #fff;
+}
+
+.package-col .info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.package-col .info p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 4px 0;
+}
+
+
+.package-col .info p:first-of-type {
+  font-weight: 600;
+  color: #ff6600;
+}
+.package-col .info p:nth-of-type(2) {
+  color: #ffb400;
+  font-size: 1.1rem;
+}
+.testimonials {
+  padding: 60px 8%;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.testimonials .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.testimonials .package-col {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.testimonials .package-col:hover {
+  transform: translateY(-8px);
+}
+.testimonials .package-col::before {
+  content: "“";
+  font-size: 3rem;
+  color: #ff6600;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  opacity: 0.2;
+}
+
+.testimonials .package-col p {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.testimonials .package-col h4 {
+  font-weight: 600;
+  color: #222;
+  font-size: 1rem;
+}
+.package-col .info p:first-of-type {
+  display: inline-block;
+  background: #ffe8d6;
+  color: #d35400;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
 }
